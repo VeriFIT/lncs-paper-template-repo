@@ -1,0 +1,91 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[envcountsame]{llncs}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{hyperref}
+\usepackage{xspace}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{subcaption}
+\usepackage{paralist}
+\usepackage[capitalise]{cleveref}
+
+% the following are an alternative to times
+% \usepackage{mathtools}
+% \usepackage{newtxmath}
+% \usepackage{newtxtext}
+
+% \usepackage{times}
+
+\usepackage{fontawesome}
+
+% line numbers
+\usepackage{lineno}
+\linenumbers
+\setlength\linenumbersep{1cm}
+\renewcommand\linenumberfont{\normalfont\tiny\color{red}}
+
+\InputIfFileExists{cutmargins.tex}{%
+  %
+  % If you don't want the margins, create an (empty) file cutmargins.tex in the
+  % directory
+  %
+
+	\pdfpagesattr{/CropBox [92 112 523 758]} % LNCS page made big
+	% \pdfpagesattr{/CropBox [125 82 490 688]} % LNCS page made even biger
+}{%
+}
+
+% remove to suppress page numbering
+\pagestyle{plain}
+
+\input{macros.tex}
+
+\title{Paper Title}
+
+\author{
+  Pika Chu and
+  Bulba Saur
+  }
+
+\institute{
+  Faculty of Information Technology,
+  Brno University of Technology,
+  Czech Republic
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\maketitle
+\begin{abstract}
+  maybe
+\end{abstract}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{-0.0mm}
+\section{Introduction}
+\vspace{-0.0mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+bla
+
+the best paper ever \cite{ChenHL19}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% BIBLIO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \clearpage
+\bibliographystyle{splncs04}
+\bibliography{literature}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% BIBLIO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \newpage
+% \appendix
+%
+% \input{appendix.tex}
+%
+\end{document}
